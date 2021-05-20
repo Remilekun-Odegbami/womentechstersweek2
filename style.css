@@ -1,0 +1,284 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Newsreader", serif;
+}
+
+body {
+  min-height: 110vh;
+}
+
+a {
+  text-decoration: none;
+}
+
+.nav-bar {
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  background: rgb(228, 208, 208);
+  padding: 10px;
+}
+
+.nav-bar a {
+  color: rgb(28, 80, 28);
+  font-size: 1em;
+  font-weight: 600px;
+}
+
+.nav-bar a:hover {
+  color: rgb(97, 141, 97);
+  font-size: 1.2em;
+  border-bottom: 2px solid whitesmoke;
+}
+
+.banner {
+  background: url("https://cdn.pixabay.com/photo/2016/11/19/20/55/apples-1841132__340.jpg")
+    no-repeat;
+  background-size: cover;
+  padding-bottom: 3em;
+  width: 100%;
+}
+
+.banner .content {
+  color: azure;
+  background: rgba(0, 0, 0, 0.3);
+  min-height: 70vh;
+  text-align: center;
+}
+
+.banner .content h1 {
+  font-size: 3em;
+  padding: 20px 0 0 50px;
+}
+
+.banner .content h2 {
+  margin: 50px 0;
+  font-size: 1.5em;
+  line-height: 30px;
+}
+
+.btn {
+  font-size: 1.3em;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  background: rgb(146, 224, 25);
+  padding: 20px;
+  border-radius: 20px;
+  width: 10%;
+  margin-top: 10px;
+  text-transform: uppercase;
+  text-align: center;
+  white-space: nowrap;
+  color: rgb(61, 89, 114);
+}
+
+#btn {
+  margin-left: 43%;
+}
+
+.media-icons {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.media-icons a {
+  color: whitesmoke;
+  font-size: 1.8em;
+  margin-right: 30px;
+  transition: 0.2s ease-in;
+}
+
+.media-icons a:hover {
+  font-size: 2.2em;
+  color: rgb(146, 224, 146);
+  transform: translateY(-20px);
+}
+
+.title {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+section {
+  min-height: 80vh;
+}
+
+.section-title {
+  position: relative;
+  color: white;
+  font-size: 2.5em;
+  font-weight: 800;
+  margin-bottom: 30px;
+  margin-top: 10px;
+}
+
+.about {
+  background: rgb(47, 148, 77);
+}
+
+.abt-content {
+  position: relative;
+  color: aliceblue;
+  padding-left: 10px;
+  line-height: 20px;
+  font-size: 1em;
+  display: flex;
+  justify-content: space-between;
+}
+.about .content .col-left {
+  position: relative;
+  width: 45%;
+}
+
+.about .content .col-right {
+  position: relative;
+  width: 50%;
+}
+
+.abt-btn {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.gallery {
+  background: rgb(43, 112, 63);
+}
+
+.gallery-img {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.contact {
+  background: rgb(47, 148, 77);
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.card {
+  background: #ffffff;
+  width: 280px;
+  margin: 20px;
+  padding: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 5px 25px rgb(134, 184, 43);
+  border-radius: 10px;
+}
+
+.contact-icon {
+  color: #7e3851;
+  font-size: 4em;
+  align-items: center;
+  transition: transform 0.5s ease;
+}
+
+.card:hover .contact-icon {
+  transform: translateY(-10px);
+}
+
+.info {
+  text-align: center;
+}
+
+.info h3 {
+  color: #666;
+  font-size: 1.5em;
+  font-weight: 500;
+  margin: 10px;
+}
+
+.info span {
+  color: #666;
+  font-weight: 600;
+  font-size: 1em;
+}
+
+.contact-form {
+  background: #ffffff;
+  max-width: 800px;
+  margin: auto;
+  margin-top: 50px;
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 0 5px 25px rgb(134, 184, 43);
+}
+
+.contact-form h3 {
+  color: #246094;
+  font-size: 2em;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.input-box {
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+input,
+textarea {
+  color: #111;
+  width: 100%;
+  padding: 10px;
+  font-size: 1em;
+  font-weight: 400;
+  outline: none;
+  border: 1px solid #7e3851;
+  border-radius: 5px;
+  resize: none;
+}
+
+.send-btn {
+  color: #fafafa;
+  background-color: rgb(146, 224, 146);
+  display: block;
+  font-size: 1.1em;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  width: 50%;
+  border: none;
+  cursor: pointer;
+  margin: 0px auto;
+}
+
+.footer {
+  background: rgb(43, 112, 63);
+  color: #fafafa;
+  text-align: center;
+  padding: 2em;
+}
+
+.footer .footer-title {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.footer p {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
